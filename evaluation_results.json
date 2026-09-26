@@ -1,0 +1,129 @@
+{
+  "evaluation_type": "Small authored smoke set; NOT an independent benchmark.",
+  "questions": 16,
+  "answerable_questions": 12,
+  "unanswerable_questions": 4,
+  "source_hit_rate_at_3_chunks": 1.0,
+  "source_mrr_at_3_chunks": 0.9583333333333334,
+  "unanswerable_abstention_rate": 0.5,
+  "median_query_ms": 1.7270499374717474,
+  "details": [
+    {
+      "question": "How do I prevent data leakage during preprocessing?",
+      "expected_source": "01_data_leakage.md",
+      "retrieved_sources": [
+        "01_data_leakage.md",
+        "05_api_testing.md"
+      ]
+    },
+    {
+      "question": "Where should I fit a scaler before testing?",
+      "expected_source": "01_data_leakage.md",
+      "retrieved_sources": [
+        "01_data_leakage.md",
+        "05_api_testing.md"
+      ]
+    },
+    {
+      "question": "Why report macro F1 for imbalanced classification?",
+      "expected_source": "02_classification_metrics.md",
+      "retrieved_sources": [
+        "02_classification_metrics.md"
+      ]
+    },
+    {
+      "question": "What does a confusion matrix show?",
+      "expected_source": "02_classification_metrics.md",
+      "retrieved_sources": [
+        "02_classification_metrics.md",
+        "06_git_reproducibility.md"
+      ]
+    },
+    {
+      "question": "How do MAE and RMSE differ?",
+      "expected_source": "03_forecasting.md",
+      "retrieved_sources": [
+        "03_forecasting.md"
+      ]
+    },
+    {
+      "question": "Can day-ahead predictions use actual demand from later in the day?",
+      "expected_source": "03_forecasting.md",
+      "retrieved_sources": [
+        "03_forecasting.md",
+        "02_classification_metrics.md",
+        "01_data_leakage.md"
+      ]
+    },
+    {
+      "question": "How is LEFT JOIN different from INNER JOIN?",
+      "expected_source": "04_sql.md",
+      "retrieved_sources": [
+        "04_sql.md"
+      ]
+    },
+    {
+      "question": "What is HAVING used for in SQL?",
+      "expected_source": "04_sql.md",
+      "retrieved_sources": [
+        "04_sql.md"
+      ]
+    },
+    {
+      "question": "How can I test a Flask route without a public server?",
+      "expected_source": "05_api_testing.md",
+      "retrieved_sources": [
+        "05_api_testing.md"
+      ]
+    },
+    {
+      "question": "What information helps reproduce a machine learning run?",
+      "expected_source": "06_git_reproducibility.md",
+      "retrieved_sources": [
+        "01_data_leakage.md",
+        "06_git_reproducibility.md"
+      ]
+    },
+    {
+      "question": "Why can TF-IDF miss synonyms?",
+      "expected_source": "07_document_retrieval.md",
+      "retrieved_sources": [
+        "07_document_retrieval.md"
+      ]
+    },
+    {
+      "question": "Do citations guarantee a RAG answer is supported?",
+      "expected_source": "08_rag.md",
+      "retrieved_sources": [
+        "08_rag.md",
+        "06_git_reproducibility.md"
+      ]
+    },
+    {
+      "question": "Who won the Wimbledon tennis championship?",
+      "expected_source": null,
+      "retrieved_sources": []
+    },
+    {
+      "question": "What is the capital of Iceland?",
+      "expected_source": null,
+      "retrieved_sources": []
+    },
+    {
+      "question": "What is the administrator password for the SQL database?",
+      "expected_source": null,
+      "retrieved_sources": [
+        "04_sql.md"
+      ]
+    },
+    {
+      "question": "What is the exact production API latency at my employer?",
+      "expected_source": null,
+      "retrieved_sources": [
+        "05_api_testing.md",
+        "08_rag.md",
+        "06_git_reproducibility.md"
+      ]
+    }
+  ]
+}

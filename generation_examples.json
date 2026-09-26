@@ -1,0 +1,75 @@
+{
+  "model": "google/flan-t5-small",
+  "device": "cpu",
+  "scope": "Four functional examples, not an answer-quality benchmark.",
+  "examples": [
+    {
+      "question": "What does MAE measure?",
+      "answer": "average absolute forecast error in the target's units",
+      "sources": [
+        {
+          "source": "03_forecasting.md",
+          "page": null,
+          "chunk": 1,
+          "text": "# Demand forecasting Mean absolute error, or MAE, measures the average absolute forecast error in the target's units. Root mean squared error, or RMSE, penalizes large errors more heavily. Compare a forecast model with a seasonal baseline such as the previous day's or previous week's value for the same hour. A rolling one-hour-ahead evaluation can use the latest observed demand before each prediction. A day-ahead forecast cannot use actual demand observed later in that day. Use chronological validation or expanding time windows. Missing hours should be represented explicitly before applying lag operations; do not assume every row is exactly one hour apart.",
+          "score": 0.06500277741512783,
+          "context_used": "# Demand forecasting Mean absolute error, or MAE, measures the average absolute forecast error in the target's units. Root mean squared error, or RMSE, penalizes large errors more heavily. Compare a forecast model with a seasonal baseline such as the previous day's or previous week's value for the same hour. A rolling one-hour-ahead evaluation can use the latest observed demand before each prediction. A day-ahead forecast cannot use actual demand observed later in that day. Use chronological validation or expanding time windows. Missing hours should be represented explicitly before applying lag operations; do not assume every row is exactly one hour apart."
+        },
+        {
+          "source": "06_git_reproducibility.md",
+          "page": null,
+          "chunk": 1,
+          "text": "# Git and reproducibility Use Git commits to record meaningful changes to code and documentation. A useful repository README explains the problem, dataset, setup commands, evaluation, limitations and attribution. Pin direct dependencies and record the Python version to help others reproduce a run. A random seed controls some sources of variation but does not guarantee identical results across every hardware and library combination. Record the dataset version or checksum, split boundaries, parameters and metrics. Keep API keys, private documents and credentials out of version control. Preserve the upstream license when adapting licensed code.",
+          "score": 0.05894094007930528,
+          "context_used": "# Git and reproducibility Use Git commits to record meaningful changes to code and documentation. A useful repository README explains the problem, dataset, setup commands, evaluation, limitations and attribution. Pin direct dependencies and record the Python version to help others reproduce a run. A random seed controls some sources of variation but does not guarantee identical results across every hardware and library combination. Record the dataset version or checksum, split boundaries, parameters and metrics. Keep API keys, private documents and credentials out of version control. Preserve the upstream license when adapting licensed code."
+        }
+      ],
+      "generated": true,
+      "evidence_coverage": 1.0,
+      "latency_ms": 437.3595002107322,
+      "note": "Retrieved sources are shown for inspection; this small model can give unsupported answers. Source inclusion is not claim-level citation verification."
+    },
+    {
+      "question": "What does INNER JOIN return?",
+      "answer": "matching rows from both tables",
+      "sources": [
+        {
+          "source": "04_sql.md",
+          "page": null,
+          "chunk": 1,
+          "text": "# SQL joins and aggregation INNER JOIN returns matching rows from both tables. LEFT JOIN keeps all rows from the left table and attaches matching rows from the right table; unmatched right-side fields are NULL. Joining tables with multiple matching keys can multiply rows, so validate uniqueness and row counts before reporting totals. GROUP BY groups rows for aggregate functions such as SUM, AVG and COUNT. WHERE filters rows before aggregation. HAVING filters groups after aggregation. Window functions such as ROW_NUMBER and LAG operate over a specified ordering and partition while preserving individual rows.",
+          "score": 0.15979152005393765,
+          "context_used": "# SQL joins and aggregation INNER JOIN returns matching rows from both tables. LEFT JOIN keeps all rows from the left table and attaches matching rows from the right table; unmatched right-side fields are NULL. Joining tables with multiple matching keys can multiply rows, so validate uniqueness and row counts before reporting totals. GROUP BY groups rows for aggregate functions such as SUM, AVG and COUNT. WHERE filters rows before aggregation. HAVING filters groups after aggregation. Window functions such as ROW_NUMBER and LAG operate over a specified ordering and partition while preserving individual rows."
+        }
+      ],
+      "generated": true,
+      "evidence_coverage": 1.0,
+      "latency_ms": 246.2168000638485,
+      "note": "Retrieved sources are shown for inspection; this small model can give unsupported answers. Source inclusion is not claim-level citation verification."
+    },
+    {
+      "question": "Who won the Wimbledon tennis championship?",
+      "answer": "Insufficient evidence in the document collection to answer this question.",
+      "sources": [],
+      "generated": false,
+      "evidence_coverage": 0.0,
+      "latency_ms": 2.476099878549576
+    },
+    {
+      "question": "What is the administrator password for the SQL database?",
+      "answer": "Insufficient evidence in the document collection to answer this question.",
+      "sources": [
+        {
+          "source": "04_sql.md",
+          "page": null,
+          "chunk": 1,
+          "text": "# SQL joins and aggregation INNER JOIN returns matching rows from both tables. LEFT JOIN keeps all rows from the left table and attaches matching rows from the right table; unmatched right-side fields are NULL. Joining tables with multiple matching keys can multiply rows, so validate uniqueness and row counts before reporting totals. GROUP BY groups rows for aggregate functions such as SUM, AVG and COUNT. WHERE filters rows before aggregation. HAVING filters groups after aggregation. Window functions such as ROW_NUMBER and LAG operate over a specified ordering and partition while preserving individual rows.",
+          "score": 0.0845683468177181
+        }
+      ],
+      "generated": false,
+      "evidence_coverage": 0.25,
+      "latency_ms": 2.510800026357174
+    }
+  ]
+}

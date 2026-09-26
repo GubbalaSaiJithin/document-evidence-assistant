@@ -1,0 +1,18 @@
+[
+  {"question": "How do I prevent data leakage during preprocessing?", "expected_source": "01_data_leakage.md"},
+  {"question": "Where should I fit a scaler before testing?", "expected_source": "01_data_leakage.md"},
+  {"question": "Why report macro F1 for imbalanced classification?", "expected_source": "02_classification_metrics.md"},
+  {"question": "What does a confusion matrix show?", "expected_source": "02_classification_metrics.md"},
+  {"question": "How do MAE and RMSE differ?", "expected_source": "03_forecasting.md"},
+  {"question": "Can day-ahead predictions use actual demand from later in the day?", "expected_source": "03_forecasting.md"},
+  {"question": "How is LEFT JOIN different from INNER JOIN?", "expected_source": "04_sql.md"},
+  {"question": "What is HAVING used for in SQL?", "expected_source": "04_sql.md"},
+  {"question": "How can I test a Flask route without a public server?", "expected_source": "05_api_testing.md"},
+  {"question": "What information helps reproduce a machine learning run?", "expected_source": "06_git_reproducibility.md"},
+  {"question": "Why can TF-IDF miss synonyms?", "expected_source": "07_document_retrieval.md"},
+  {"question": "Do citations guarantee a RAG answer is supported?", "expected_source": "08_rag.md"},
+  {"question": "Who won the Wimbledon tennis championship?", "expected_source": null},
+  {"question": "What is the capital of Iceland?", "expected_source": null},
+  {"question": "What is the administrator password for the SQL database?", "expected_source": null},
+  {"question": "What is the exact production API latency at my employer?", "expected_source": null}
+]
